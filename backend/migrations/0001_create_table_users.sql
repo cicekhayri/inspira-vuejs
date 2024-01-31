@@ -8,3 +8,4 @@ CREATE TABLE users (
 	UNIQUE (email)
 );
 -- Down
+DROP TABLE users;
