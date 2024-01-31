@@ -1,30 +1,36 @@
 <template>
-  <form @submit.prevent="onSubmit">
-    <div class="mb-3">
-      <label for="nameInput" class="form-label">Name</label>
-      <input
-        type="text"
-        v-model="form.name"
-        id="nameInput"
-        class="form-control"
-      />
-    </div>
+  <div class="bg-body-tertiary rounded-3 mt-5 p-3">
+    <form @submit.prevent="onSubmit">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input
+          type="text"
+          v-model="form.name"
+          id="nameInput"
+          class="form-control"
+        />
+      </div>
 
-    <div class="mb-3">
-      <label for="emailInput" class="form-label">Email address</label>
-      <input
-        type="email"
-        v-model="form.email"
-        id="emailInput"
-        class="form-control"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="addressInput" class="form-label">Address</label>
-      <textarea v-model="form.address" id="addressInput" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-  </form>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input
+          type="email"
+          v-model="form.email"
+          id="emailInput"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="addressInput" class="form-label">Address</label>
+        <textarea
+          v-model="form.address"
+          id="addressInput"
+          class="form-control"
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
 
   <table class="table mt-5">
     <thead>
